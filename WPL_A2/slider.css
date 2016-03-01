@@ -1,0 +1,119 @@
+
+#slider{
+	width: 700px;
+	height: 355px;
+	overflow: hidden;
+	margin: 30px auto;
+
+}
+
+#slider > img{
+	width: 700px;
+	height: 355px;
+	float: left;
+	display: none;
+}
+
+a{
+	padding: 5px 10px;
+	background-color: #F0F0F0;
+	margin-top: 30px;
+	text-decoration: none;
+	color: #666;
+}
+
+a.left{
+	float: left;
+}
+
+a.right{
+	float: right;
+}
+
+
+#next{
+	text-align:center;
+	line-height: 50px;
+	color:white;
+	position:absolute;
+	top:180px;
+	left:983px;
+	z-index:99;
+	cursor:pointer;
+	width: 50px; height:50px;
+	background-color:rgba(183,0,3,0.5);
+	opacity:0;
+}
+
+#prev{
+	text-align:center;
+	line-height: 50px;
+	color:white;
+	position:absolute;
+	top:180px;
+	z-index:99;
+	cursor:pointer;
+	width: 50px; height:50px;
+	background-color:rgba(183,0,3,0.5);
+	opacity:0;
+}
+
+#slider:hover #next{
+	opacity:1;
+	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	
+}
+
+#slider:hover #prev{
+	opacity:1;
+	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	}
+
+#slider:hover #numberedBulllet{
+	opacity:1;
+	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+}
+
+#slider:hover #description{
+	opacity:1;
+	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+}
+
+#numberedBulllet  ol {
+	list-style-type: none;
+	display: inline-table;
+	padding-right: 20px;
+	text-align:center;
+	color:red;
+	position:absolute;
+	float: left;
+	top:335px;
+    left:410px;
+	z-index:99;
+	cursor:pointer;
+	width: 50px; height:0px;
+	opacity:1.5;
+}
+#description{
+	display: inline-table;
+	text-align:center;
+	line-height: 50px;
+	color:white;
+	position:absolute;
+	top:335px;
+	z-index:99;
+	cursor:pointer;
+	width: 100px; height:50px;
+	background-color:rgba(183,0,3,0.5);
+	opacity:1.5;
+	float: left;
+	text-align: center;
+}
+
+#numberedBulllet button:focus{
+	background: red;
+}
